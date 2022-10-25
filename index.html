@@ -533,26 +533,36 @@
                 </svg>
             </button>
             
-            <b>Залиште свої дані, ми вам передзвонимо</b>
-            <form>
-                <ul>
-                    <li>
-                        <label for="user-name">Ім'я користувача</label>
-                        <input type="text" name="user-name" id="user-name">
-                    </li>
-                    <li>
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel">
-                    </li>
-                    <li>
-                        <label for="mail">Пошта</label>
-                        <input type="email" name="mail" id="mail">
-                    </li>
-                    <li>
-                        <label for="comment">Коментар</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-                    </li>
-                </ul>
+            <form class="form">
+                <b class="form-text">Залиште свої дані, ми вам передзвонимо</b>
+                <div class="form-field">   
+                    <label for="user-name">Ім'я</label>
+                    <input type="text" name="user-name" id="user-name">
+                </div> 
+
+                <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel"/>
+                </div>
+
+                <div class="form-field">
+                    <label for="mail">Пошта</label>
+                    <input type="email" name="mail" id="mail"/>
+                </div>
+
+                <div class="form-field">
+                    <label for="comment">Коментар</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="fghg"></textarea>
+                </div>
+
+                <div>
+                <input type="checkbox" name="Subscription" id="Subscription"/>
+                <label for="Subscription">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                </div>
+               
+                <button type="submit">
+                    Відправити
+                </button>
                 
             </form>
         </div>

@@ -714,6 +714,8 @@ textarea {
    border-radius: 4px;
 }
 .form-checkbox {
+   display: flex;
+   justify-content: center;
    margin-bottom: 30px;
 }
 .form-checkbox input[type='checkbox'] {
@@ -727,6 +729,20 @@ textarea {
 }
 .form-checkbox-link {
    color: var(--acent-color);
+}
+.form-button {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 52px;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+
+   letter-spacing: 0.06em;
+   color: var(--White);
+   background-color: var(--acent-color);
 }
 
 

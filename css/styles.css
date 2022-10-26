@@ -692,7 +692,7 @@ textarea {
    position: relative;
 }
 .form-field input {
-   padding: 11px 12px;
+   padding: 12px 12px 12px 42px;
    width: 100%;
    
    border: 1px solid rgba(33, 33, 33, 0.2);
@@ -700,8 +700,8 @@ textarea {
 }
 .form-field-icon {
    position: absolute;
-   left: 15px;
    top: 50%;
+   left: 15px;
    transform: translateY(-50%);
 }
 .form-field::placeholder {

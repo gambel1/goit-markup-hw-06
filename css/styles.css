@@ -623,6 +623,7 @@ footer {
 }
 .modal {
    position: relative;
+   padding: 40px;
    top: 50%;
    left: 50%;
       
@@ -661,16 +662,11 @@ footer {
 /* Modal form */
 textarea {
    resize: none;
+   padding: 12px 16px;
 }
-.form {
-   width: 448px;
-   margin-left: auto;
-   margin-right: auto;
- }
 .form-text {
    display: flex;
-   text-align: center;
-   padding-top: 40px;
+   justify-content: center;
    margin-bottom: 12px;
    font-size: 20px;
    line-height: 1.15;
@@ -682,6 +678,9 @@ textarea {
    flex-direction: column;
    margin-bottom: 10px;
 }
+.form-field-end {
+   margin-bottom: 20px;
+}
 .form-field label {
    margin-bottom: 4px;
    font-size: 12px;
@@ -689,26 +688,46 @@ textarea {
    letter-spacing: 0.01em;
    color: var(--title-text-color);
 }
+.form-field-box {
+   position: relative;
+}
 .form-field input {
-   padding: 11px 0 11px 12px;
-   font-size: 12px;
-   line-height: 1.16;
-   letter-spacing: 0.01em;
-
+   padding: 11px 12px;
+   width: 100%;
+   
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+}
+.form-field-icon {
+   position: absolute;
+   left: 12px;
+   top: 50%;
+   transform: translateY(-50%);
 }
 .form-field::placeholder {
-   padding: 12px 16px;
    font-size: 12px;
    line-height: 1.16;
    letter-spacing: 0.01em;
 
-   color: var(--title-text-color);
+   color: rgba(117, 117, 117, 0.5);
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
 }
+.form-checkbox {
+   margin-bottom: 30px;
+}
+.form-checkbox input[type='checkbox'] {
+}
+.form-checkbox label {
+   margin-left: 8px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
 
+   color: var(--title-text-color);
+}
+.form-checkbox-link {
+   color: var(--acent-color);
+}
 
 
 

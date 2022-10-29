@@ -507,6 +507,7 @@ footer {
    margin-right: 12px;
    padding: 15px 0 15px 16px;
 
+   color: var(--White);
    background-color: var(--secondaly);
    border: 1px solid rgba(255, 255, 255, 0.3);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -708,6 +709,7 @@ footer {
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    background-color: #ffffff;
+   transition: fill 250ms var(--timing-function);
 }
 .modal-button:hover {
    fill: var(--acent-color);
@@ -748,6 +750,7 @@ footer {
 }
 .form-field-box {
    position: relative;
+   transition: fill 250ms var(--timing-function);
 }
 .form-field-box:focus-within {
    border-color: #2196F3;
@@ -795,14 +798,22 @@ textarea {
 .form-checkbox label {
    display: flex;
    align-items: center;
-   justify-content: center;
-   gap: 8.38px;
+   gap: 8px;
 
    line-height: 1.7;
    letter-spacing: 0.03em;
 
    color: var(--title-text-color);
 }
+.form-checkbox label::before {
+   content: "";
+   display: flex;
+   width: 16px;
+   height: 15px;
+
+   border: solid 2px #000000;
+   border-radius: 2px;
+ }
 .form-checkbox-link {
    color: var(--acent-color);
 }
@@ -825,8 +836,18 @@ textarea {
    background-color: var(--acent-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
+   cursor: pointer;
    border: none;
+   /* transition: background-color 250ms var(--timing-function), 
+               box-shadow 250ms var(--timing-function); */
 }
+/* .form-button:hover,
+.form-button:focus {
+   background-color: var(--acent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   cursor: pointer;
+} */
+
 
 
 

@@ -752,16 +752,18 @@ footer {
    position: relative;
    transition: fill 250ms var(--timing-function);
 }
-.form-field-box:focus-within {
-   border-color: #2196F3;
-   fill: #2196F3;
-}
+
 .form-field input {
    padding: 12px 12px 12px 42px;
    width: 100%;
    
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+   outline: none;
+}
+.form-field-box input:focus {
+   border-color: #2196F3;
+   fill: #2196F3;
 }
 .form-field-icon {
    position: absolute;
@@ -805,7 +807,7 @@ textarea {
 
    color: var(--title-text-color);
 }
-.form-checkbox label::before {
+.form-checkbox input::after {
    content: "";
    display: flex;
    width: 16px;

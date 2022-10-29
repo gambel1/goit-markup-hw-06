@@ -818,8 +818,8 @@ textarea {
    color: var(--acent-color);
 }
 .form-checkbox-icon {
-   width: 16px;
-   height: 15px;
+   width: 11px;
+   height: 8px;
 }
 .form-button {
    display: flex;

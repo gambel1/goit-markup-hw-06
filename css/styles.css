@@ -458,7 +458,7 @@ footer {
 .footer-box {
    display: flex;
    align-items: baseline;
-   gap: 73px;
+   justify-content: space-between;
 }
 .footer-title {
    line-height: 1.14;
@@ -783,7 +783,11 @@ textarea {
    position: absolute;
 }
 .form-checkbox label {
-   margin-left: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8.38px;
+   
    line-height: 1.7;
    letter-spacing: 0.03em;
 
@@ -791,6 +795,10 @@ textarea {
 }
 .form-checkbox-link {
    color: var(--acent-color);
+}
+.form-checkbox-icon {
+   width: 16px;
+   height: 15px;
 }
 .form-button {
    display: flex;

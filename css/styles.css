@@ -807,15 +807,12 @@ textarea {
 
    color: var(--title-text-color);
 }
-.form-checkbox input::after {
-   content: "";
-   display: flex;
+.checkbox-border {
    width: 16px;
    height: 15px;
+   border: 2px solid var(--primery-text-color);
+}
 
-   border: solid 2px #000000;
-   border-radius: 2px;
- }
 .form-checkbox-link {
    color: var(--acent-color);
 }

@@ -699,6 +699,7 @@ footer {
    align-items: center;
    top: 8px;
    right: 8px;
+
    padding: 9px 9px 10px 10px;   
    width: 30px;
    height: 30px;
@@ -707,7 +708,9 @@ footer {
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    background-color: #ffffff;
-   
+}
+.modal-button:hover {
+   fill: var(--acent-color);
 }
 .modal-icon {
    width: 11px;
@@ -720,6 +723,7 @@ footer {
    display: flex;
    justify-content: center;
    margin-bottom: 12px;
+
    font-size: 20px;
    line-height: 1.15;
    letter-spacing: 0.03em;
@@ -735,13 +739,19 @@ footer {
 }
 .form-field label {
    margin-bottom: 4px;
+
    font-size: 12px;
    line-height: 1.16;
    letter-spacing: 0.01em;
+
    color: var(--title-text-color);
 }
 .form-field-box {
    position: relative;
+}
+.form-field-box input:checked {
+   border-color: #2196F3;
+   fill: #2196F3;
 }
 .form-field input {
    padding: 12px 12px 12px 42px;
@@ -787,7 +797,7 @@ textarea {
    align-items: center;
    justify-content: center;
    gap: 8.38px;
-   
+
    line-height: 1.7;
    letter-spacing: 0.03em;
 
@@ -815,6 +825,7 @@ textarea {
    background-color: var(--acent-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
+   border: none;
 }
 
 

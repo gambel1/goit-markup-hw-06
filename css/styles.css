@@ -513,6 +513,7 @@ footer {
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
 }
+
 .subscription-box input::placeholder {
    font-size: 16px;
    line-height: 1.25;
@@ -708,10 +709,12 @@ footer {
    cursor: pointer;
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
+   outline: none;
    background-color: #ffffff;
    transition: fill 250ms var(--timing-function);
 }
-.modal-button:hover {
+.modal-button:hover,
+.modal-button:focus {
    fill: var(--acent-color);
 }
 .modal-icon {
